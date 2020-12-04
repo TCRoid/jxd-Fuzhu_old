@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:id="@+id/LinearLayout2"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="无游戏数据\n若已安装九仙道，请打开游戏【更新数据】"
+			android:layout_width="wrap_content"
+			android:gravity="center"/>
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="点击安装九仙道"
+			android:layout_width="wrap_content"
+			android:textStyle="bold"
+			android:layout_marginTop="10dp"
+			android:id="@+id/TextIn"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/LinearLayout1"
+		android:visibility="visible">
+
+		<ListView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:id="@+id/ListV"
+			android:layout_marginTop="2dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:id="@+id/LinearLayout3"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="空文件夹"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:orientation="vertical"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_margin="16dp">
+
+		<android.support.design.widget.FloatingActionButton
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/play"
+			android:id="@+id/FloatBtn_play"/>
+
+		<android.support.design.widget.FloatingActionButton
+			android:id="@+id/FloatBtn_new"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/fab_add"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

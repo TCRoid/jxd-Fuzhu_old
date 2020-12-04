@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center"
+		android:id="@+id/LinearLayout4"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_height="wrap_content"
+			android:text="无备份数据"
+			android:layout_width="wrap_content"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:id="@+id/LinearLayout3">
+
+		<ListView
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:layout_marginTop="2dp"
+			android:id="@+id/list_bak"/>
+
+	</LinearLayout>
+
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/FloatBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_margin="16dp"
+		android:src="@drawable/fab_add"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"/>
+
+</RelativeLayout>
+
